@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f5fc;
+}
+
+main {
+  max-width: 1420px;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 40px 84px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerEncryptor {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  width: 100%;
+}
+
+.containerEncryptor .logo {
+  width: 32px;
+  height: 48px;
+  margin-bottom: 25px;
+}
+
+.containerEncryptor .textEncryptor {
+  padding: 14px;
+  height: 100%;
+  font-size: 31px;
+  color: #0a3871;
+  background-color: #f3f5fc;
+  border: 2px solid #0a3871;
+  border-radius: 32px;
+  resize: none;
+}
+
+.containerEncryptor .textEncryptor:focus-visible {
+  outline: 0;
+}
+
+.containerEncryptor .ContainerError {
+  display: flex;
+  margin: 18px 0;
+}
+
+.containerEncryptor .ContainerError img {
+  width: 16px;
+  height: 16px;
+}
+
+.containerEncryptor .ContainerError .errorMessage {
+  font-size: 12px;
+}
+
+.containerEncryptor .containerButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerEncryptor .containerButtons .encryptButton,
+.containerEncryptor .containerButtons .decryptorButton {
+  width: 47%;
+}
+
+.containerEncryptor .containerButtons .encryptButton {
+  color: #d8dfe8;
+  background-color: #0a3871;
+}
+
+.containerEncryptor .containerButtons .decryptorButton {
+  color: #0a3871;
+  background-color: #d8dfe8;
+}
+
+.containerResult {
+  width: 400px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+.containerResult .frontFrame {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerResult .frontFrame .noMessage {
+  font-weight: 700;
+  font-size: 31px;
+}
+
+.containerResult .frontFrame .loginMessage {
+  font-size: 16px;
+}
+
+.containerResult .noMessage,
+.containerResult .loginMessage {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.containerResult .backFrame {
+  height: 100%;
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.containerResult .backFrame .messageResolved {
+  font-size: 24px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.containerResult .backFrame .copyButton {
+  width: 90%;
+}
+
+.button {
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 24px;
+  font-size: 19px;
+  border-style: none;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0 0.5rem 0.5rem rgba(56, 56, 56, 0.168);
+  transition: 0.3s;
+}
+
+.containerResult .invisible {
+  display: none;
+}
+
+.borderError {
+  border: 2px solid #ff0000 !important;
+}
+
+.deactivate {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 50px;
+  }
+  .button {
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 24px;
+    font-size: 19px;
+    border-style: none;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  .containerEncryptor .textEncryptor,
+  .containerResult,
+  .containerResult .backFrame {
+    width: 100%;
+  }
+
+  .containerResult .frontFrame {
+    padding: 30px;
+  }
+
+  .containerResult .frontFrame img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 448px) {
+  .containerEncryptor .textEncryptor {
+    font-size: 26px;
+  }
+
+  .containerEncryptor .containerButtons {
+    flex-direction: column;
+  }
+
+  .containerEncryptor .containerButtons .encryptButton,
+  .containerEncryptor .containerButtons .decryptorButton {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

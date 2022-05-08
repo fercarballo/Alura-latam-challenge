@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="containerEncryptor">
+            <img class="logo" src="img/Vector.svg" alt="logo">
+            <textarea id="textEncryptor" class="textEncryptor" rows="7" maxlength="300"
+                placeholder="ingrese el texto aquí"></textarea>
+            <div class="ContainerError">
+                <img src="img/iconoError.svg" alt="mensajeError">
+                <p id="errorMessage" class="errorMessage">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="containerButtons">
+                <button id="encryptButton" class="button encryptButton">Encriptar</button>
+                <button id="decryptorButton" class="button decryptorButton">Descencriptar</button>
+            </div>
+        </section>
+        <section class="containerResult">
+            <div id="frontFrame" class="frontFrame">
+                <img src="img/Munieco.svg" alt="">
+                <p class="noMessage">Ningún mensaje fue encontrado</p>
+                <p class="loginMessage">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="backFrame" class="backFrame invisible">
+                <p id="messageResolved" class="messageResolved"></p>
+                <button id="copyButton" class="button copyButton">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
