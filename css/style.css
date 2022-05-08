@@ -60,6 +60,7 @@ main {
 
 .containerEncryptor .ContainerError .errorMessage {
   font-size: 12px;
+  padding: 0 10px;
 }
 
 .containerEncryptor .containerButtons {
@@ -86,8 +87,9 @@ main {
 .containerResult {
   width: 400px;
   background: #ffffff;
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
   border-radius: 32px;
+  margin-top: 70px;
 }
 
 .containerResult .frontFrame {
@@ -129,11 +131,12 @@ main {
 
 .containerResult .backFrame .copyButton {
   width: 90%;
+  margin-bottom: 2%;
 }
 
 .button {
   height: 70px;
-  margin: 0 auto;
+  margin: 1% auto;
   border-radius: 24px;
   font-size: 19px;
   border-style: none;
